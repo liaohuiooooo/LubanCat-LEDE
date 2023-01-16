@@ -11,6 +11,8 @@
 
 rm -rf package/kernel/mac80211
 svn export https://github.com/openwrt/openwrt/trunk/package/kernel/mac80211 package/kernel/mac80211
+rm -rf package/kernel/mt76
+svn export https://github.com/openwrt/openwrt/trunk/package/kernel/mt76 package/kernel/mt76
 rm -rf package/kernel/rtl8821cu
 
 # alist
@@ -21,14 +23,6 @@ svn export https://github.com/sbwml/packages_lang_golang/branches/19.x feeds/pac
 # Clone community packages
 mkdir package/community
 pushd package/community
-
-# Add Lienol's Packages
-git clone --depth=1 https://github.com/Lienol/openwrt-package
-rm -rf openwrt-package/verysync
-rm -rf openwrt-package/luci-app-verysync
-
-# Add luci-app-adguardhome
-svn export https://github.com/Lienol/openwrt-package/branches/other/luci-app-adguardhome
 
 # Add luci-app-passwall
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
