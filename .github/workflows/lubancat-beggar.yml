@@ -152,14 +152,15 @@ jobs:
         make clean
         make -j$(($(nproc) + 1))
         pushd bin/targets/rockchip/armv8
+        rm -rf **ext4**
         rm -rf openwrt-rockchip-armv8.manifest
         rm -rf openwrt-rockchip-armv8-rootfs.tar.gz
         rm -rf config.buildinfo
         rm -rf packages-server.zip
-        mv openwrt-rockchip-armv8-embedfire_lubancat1-ext4-sysupgrade.img.gz beggar-embedfire_lubancat1-ext4-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-embedfire_lubancat1n-ext4-sysupgrade.img.gz beggar-embedfire_lubancat1n-ext4-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-embedfire_lubancat2-ext4-sysupgrade.img.gz beggar-embedfire_lubancat2-ext4-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-embedfire_lubancat2n-ext4-sysupgrade.img.gz beggar-embedfire_lubancat2n-ext4-sysupgrade.img.gz
+        #mv openwrt-rockchip-armv8-embedfire_lubancat1-ext4-sysupgrade.img.gz beggar-embedfire_lubancat1-ext4-sysupgrade.img.gz
+        #mv openwrt-rockchip-armv8-embedfire_lubancat1n-ext4-sysupgrade.img.gz beggar-embedfire_lubancat1n-ext4-sysupgrade.img.gz
+        #mv openwrt-rockchip-armv8-embedfire_lubancat2-ext4-sysupgrade.img.gz beggar-embedfire_lubancat2-ext4-sysupgrade.img.gz
+        #mv openwrt-rockchip-armv8-embedfire_lubancat2n-ext4-sysupgrade.img.gz beggar-embedfire_lubancat2n-ext4-sysupgrade.img.gz
         mv openwrt-rockchip-armv8-embedfire_lubancat1-squashfs-sysupgrade.img.gz beggar-embedfire_lubancat1-squashfs-sysupgrade.img.gz
         mv openwrt-rockchip-armv8-embedfire_lubancat1n-squashfs-sysupgrade.img.gz beggar-embedfire_lubancat1n-squashfs-sysupgrade.img.gz
         mv openwrt-rockchip-armv8-embedfire_lubancat2-squashfs-sysupgrade.img.gz beggar-embedfire_lubancat2-squashfs-sysupgrade.img.gz
