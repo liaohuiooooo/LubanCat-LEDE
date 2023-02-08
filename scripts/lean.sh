@@ -1,3 +1,12 @@
+#!/bin/bash
+#=================================================
+# System Required: Linux
+# Version: 1.0
+# Lisence: MIT
+# Author: SuLingGG
+# Blog: https://mlapp.cn
+#=================================================
+
 # mt7921
 rm -rf package/kernel/rtl8821cu
 rm -rf package/kernel/mac80211
