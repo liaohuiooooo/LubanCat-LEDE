@@ -159,10 +159,10 @@ jobs:
         #mv openwrt-rockchip-armv8-embedfire_lubancat1n-ext4-sysupgrade.img.gz docker-embedfire_lubancat1n-ext4-sysupgrade.img.gz
         #mv openwrt-rockchip-armv8-embedfire_lubancat2-ext4-sysupgrade.img.gz docker-embedfire_lubancat2-ext4-sysupgrade.img.gz
         #mv openwrt-rockchip-armv8-embedfire_lubancat2n-ext4-sysupgrade.img.gz docker-embedfire_lubancat2n-ext4-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-embedfire_lubancat1-squashfs-sysupgrade.img.gz docker-embedfire_lubancat1-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-embedfire_lubancat1n-squashfs-sysupgrade.img.gz docker-embedfire_lubancat1n-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-embedfire_lubancat2-squashfs-sysupgrade.img.gz docker-embedfire_lubancat2-squashfs-sysupgrade.img.gz
-        mv openwrt-rockchip-armv8-embedfire_lubancat2n-squashfs-sysupgrade.img.gz docker-embedfire_lubancat2n-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-embedfire_lubancat1-squashfs-sysupgrade.img.gz docker-embedfire_lubancat1_linux-6.1-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-embedfire_lubancat1n-squashfs-sysupgrade.img.gz docker-embedfire_lubancat1n_linux-6.1-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-embedfire_lubancat2-squashfs-sysupgrade.img.gz docker-embedfire_lubancat2_linux-6.1-squashfs-sysupgrade.img.gz
+        mv openwrt-rockchip-armv8-embedfire_lubancat2n-squashfs-sysupgrade.img.gz docker-embedfire_lubancat2n_linux-6.1-squashfs-sysupgrade.img.gz
         popd
         make checksum
         mv bin/targets/rockchip/armv8/sha256sums bin/targets/rockchip/armv8/docker-sha256sums
@@ -188,7 +188,7 @@ jobs:
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-          name: ${{ steps.tag.outputs.release_date }} LubanCat-linux.6.1_固件下载
+          name: ${{ steps.tag.outputs.release_date }} LubanCat_固件下载
           tag_name: ${{ steps.tag.outputs.release_tag }}
           body_path: release.txt
           files: ${{ env.FIRMWARE }}/*
