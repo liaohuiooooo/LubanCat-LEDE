@@ -30,8 +30,19 @@
 - 电报交流群：https://t.me/DHDAXCW
 
 # 插件展示
- 
+ ![image](https://user-images.githubusercontent.com/74764072/223003561-fefd7792-0410-41c6-9a55-2a423f6888c7.png)
+
  ![image](https://user-images.githubusercontent.com/74764072/183227361-e8bdb023-5514-437d-97e8-e13ca4285035.png)
+ 
+ ![image](https://user-images.githubusercontent.com/74764072/223003586-9a514cda-8cc8-4e08-a04c-54cde1059936.png)
+ 
+ ![image](https://user-images.githubusercontent.com/74764072/223003609-7e40ce87-2ddb-4344-bd29-7289a8a54a94.png)
+ 
+ ![image](https://user-images.githubusercontent.com/74764072/223003638-9099340a-9eb2-4e5a-836c-71195c8349f3.png)
+ 
+ ![image](https://user-images.githubusercontent.com/74764072/223003660-7c6e896c-4f46-4527-8c0c-f2a6c7da87f4.png)
+ 
+ ![image](https://user-images.githubusercontent.com/74764072/223003679-72db11e3-d085-47c3-8673-4f65eb600a99.png)
 
 # [赏个鸡腿吧](https://afdian.net/@dhdaxcw/plan)
 ### https://afdian.net/@dhdaxcw/plan
