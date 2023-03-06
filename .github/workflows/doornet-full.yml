@@ -81,18 +81,12 @@ jobs:
         ../$DIY_SH
         ../scripts/preset-clash-core.sh arm64
         ../scripts/preset-terminal-tools.sh
-        sed -i '$a\CONFIG_DEVEL=y\nCONFIG_LOCALMIRROR=\"https://openwrt.cc/dl/coolsnowwolf/lede\"' .config
         make defconfig
 
     - name: Download Package
       id: package
       run: |
         cd $OPENWRTROOT
-        if "$KMODS_IN_FIRMWARE" = 'true'
-        then
-            echo "CONFIG_ALL_NONSHARED=y" >> .config
-        fi
-        ../scripts/modify_config.sh
         cat .config
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
