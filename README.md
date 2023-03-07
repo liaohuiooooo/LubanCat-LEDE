@@ -29,16 +29,6 @@
 - 刷机方法请参考dn2刷机 https://github.com/DHDAXCW/DoorNet-1-2/blob/mere/emmc.md
 - 电报交流群：https://t.me/DHDAXCW
 
-### LubanCat使用无线网卡
-
-- LubanCat1，LubanCat2底座支持minipcie，推荐使用 插aw7916 WiFi6 3000Mbps pcie网卡，固件默认支持
-
-![image](https://user-images.githubusercontent.com/74764072/223300749-43483f15-c30f-4abb-badb-d256d84c6b76.png)
-
-![image](https://user-images.githubusercontent.com/74764072/223300888-3a043517-09e2-44e2-bee1-bc2858d85f5e.png)
-
-![image](https://user-images.githubusercontent.com/74764072/223300943-852a212e-acda-4bd4-8527-316aa8282966.png)
-
 # 插件展示
  ![image](https://user-images.githubusercontent.com/74764072/223003561-fefd7792-0410-41c6-9a55-2a423f6888c7.png)
 
@@ -53,6 +43,16 @@
  ![image](https://user-images.githubusercontent.com/74764072/223003660-7c6e896c-4f46-4527-8c0c-f2a6c7da87f4.png)
  
  ![image](https://user-images.githubusercontent.com/74764072/223003679-72db11e3-d085-47c3-8673-4f65eb600a99.png)
+
+### LubanCat使用无线网卡
+
+- LubanCat1，LubanCat2底座支持minipcie，推荐使用 插aw7916 WiFi6 3000Mbps pcie网卡，固件默认支持
+
+![image](https://user-images.githubusercontent.com/74764072/223300749-43483f15-c30f-4abb-badb-d256d84c6b76.png)
+
+![image](https://user-images.githubusercontent.com/74764072/223300888-3a043517-09e2-44e2-bee1-bc2858d85f5e.png)
+
+![image](https://user-images.githubusercontent.com/74764072/223300943-852a212e-acda-4bd4-8527-316aa8282966.png)
 
 # [赏个鸡腿吧](https://afdian.net/@dhdaxcw/plan)
 ### https://afdian.net/@dhdaxcw/plan
