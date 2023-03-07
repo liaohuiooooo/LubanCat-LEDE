@@ -19,7 +19,7 @@ on:
 env:
   REPO_URL: https://github.com/DHDAXCW/lede-rockchip
   REPO_BRANCH: stable
-  CONFIG_FILE: configs/lede/5.4/lede_slim.config
+  CONFIG_FILE: configs/lede/5.4/lede-slim.config
   DIY_SH: scripts/5.4-lede.sh
   IPV6MOD_IN_FIRMWARE: true
   KMODS_IN_FIRMWARE: true
