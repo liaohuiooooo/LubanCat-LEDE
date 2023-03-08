@@ -28,6 +28,7 @@
 - 下载地址： https://github.com/DHDAXCW/lubancat-lede/releases
 - 刷机方法请参考dn2刷机 https://github.com/DHDAXCW/DoorNet-1-2/blob/mere/emmc.md
 - 电报交流群：https://t.me/DHDAXCW
+- 完美支持aw7916  注：要求电压3a以上，保证不掉卡
 
 # 插件展示
  ![image](https://user-images.githubusercontent.com/74764072/223003561-fefd7792-0410-41c6-9a55-2a423f6888c7.png)
