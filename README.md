@@ -40,9 +40,9 @@
  
  ![image](https://user-images.githubusercontent.com/74764072/223003638-9099340a-9eb2-4e5a-836c-71195c8349f3.png)
  
- ![image](https://user-images.githubusercontent.com/74764072/223003660-7c6e896c-4f46-4527-8c0c-f2a6c7da87f4.png)
- 
- ![image](https://user-images.githubusercontent.com/74764072/223003679-72db11e3-d085-47c3-8673-4f65eb600a99.png)
+ ![image](https://user-images.githubusercontent.com/74764072/223716716-f17a39d3-ead5-4e81-b878-0f71b639ecfc.png)
+
+ ![image](https://user-images.githubusercontent.com/74764072/223716835-f670a868-3744-4889-80b7-0cf2f3b101f3.png)
 
 ### LubanCat使用无线网卡
 
