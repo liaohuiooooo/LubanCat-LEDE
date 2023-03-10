@@ -7,10 +7,6 @@
 # Blog: https://mlapp.cn
 #=================================================
 
-# mt7921
-rm -rf package/kernel/mt76
-svn export https://github.com/DHDAXCW/LubanCat-LEDE/trunk/scripts/mt76 package/kernel/mt76
-
 # Add cpufreq
 rm -rf ./feeds/luci/applications/luci-app-cpufreq 
 svn export https://github.com/DHDAXCW/luci-bt/trunk/applications/luci-app-cpufreq ./feeds/luci/applications/luci-app-cpufreq
