@@ -31,12 +31,8 @@ rm -rf openwrt-package/luci-app-verysync
 
 # Add luci-app-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall
-cd openwrt-passwall
-git checkout 4fd4bf8
-cd ../
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2
 svn export https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall
-git checkout 4fd4bf8
 
 # Add luci-app-ssr-plus
 git clone --depth=1 https://github.com/fw876/helloworld
