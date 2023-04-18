@@ -342,6 +342,14 @@
 	>;
 };
 
+&av1d {
+	status = "okay";
+};
+
+&av1d_mmu {
+	status = "okay";
+};
+
 &spdif_tx2 {
     status = "okay";
 };
@@ -988,46 +996,91 @@
 	status = "okay";
 };
 
+&iep {
+	status = "okay";
+};
+
+&iep_mmu {
+	status = "okay";
+};
+
+&jpegd {
+	status = "okay";
+};
+
+&jpegd_mmu {
+	status = "okay";
+};
+
+&jpege_ccu {
+	status = "okay";
+};
+
+&jpege0 {
+	status = "okay";
+};
+
+&jpege0_mmu {
+	status = "okay";
+};
+
+&jpege1 {
+	status = "okay";
+};
+
+&jpege1_mmu {
+	status = "okay";
+};
+
+&jpege2 {
+	status = "okay";
+};
+
+&jpege2_mmu {
+	status = "okay";
+};
+
+&jpege3 {
+	status = "okay";
+};
+
+&jpege3_mmu {
+	status = "okay";
+};
+
+&mpp_srv {
+	status = "okay";
+};
+
 &pwm0 {
 	pinctrl-0 = <&pwm0m2_pins>;
 	status = "okay";
 };
 
-&pwm3{
+&pwm3 {
 	compatible = "rockchip,remotectl-pwm";
 	pinctrl-names = "default";
-	pinctrl-0 = <&pwm3m3_pins>;
+	pinctrl-0 = <&pwm3m0_pins>;
 	remote_pwm_id = <3>;
 	handle_cpu_id = <1>;
 	remote_support_psci = <0>;
 	status = "okay";
 
-	ir_key1 {		
-		rockchip,usercode = <0xdf00>;		
-		rockchip,key_table =
-			<0xe3   KEY_POWER>,
-			<0xc1   KEY_TV>,
-			<0x99   KEY_HOME>,			
-			<0x40   KEY_SETUP>,
-			<0x98   KEY_UP>,
-			<0x93   KEY_DOWN>,
-			<0x96   KEY_LEFT>,
-			<0x95   KEY_RIGHT>,
-			<0x92   KEY_ENTER>,
-			<0x61   KEY_BACK>,
-			<0x80   KEY_MENU>,			
-			<0x8c   KEY_VOLUMEUP>,
-			<0x8d   KEY_VOLUMEDOWN>,
-			<0x8e   KEY_MUTE>,
-			<0xbf   0x190>,
-			<0xe0   0x191>,
-			<0xe1   0x192>,
-			<0xe9   183>,
-			<0xe6   248>,
-			<0xe8   185>,
-			<0xe7   186>,
-			<0xf0   388>,
-			<0xbe   0x175>;
+	ir_key_lubancat{
+	rockchip,usercode = <0xff00>;
+	rockchip,key_table =
+		<0xeb   KEY_POWER>,
+		<0xec   KEY_MENU>,
+		<0xfe   KEY_BACK>,
+		<0xb7   KEY_HOME>,
+		<0xa3   KEY_WWW>,
+		<0xf4   KEY_VOLUMEUP>,
+		<0xa7   KEY_VOLUMEDOWN>,
+		<0xf8   KEY_REPLY>,
+		<0xfc   KEY_UP>,
+		<0xfd   KEY_DOWN>,
+		<0xf1   KEY_LEFT>,
+		<0xe5   KEY_RIGHT>;
 	};
 
 	ir_key2 {	
@@ -1036,7 +1089,7 @@
 			<0x28   KEY_POWER>,
 			<0xfe   KEY_SETUP>,
 			<0xa4   KEY_MUTE>,
-			<0x6d   KEY_UP>, 
+			<0x6d   KEY_UP>,
 			<0x68   KEY_LEFT>,
 			<0x64   KEY_ENTER>,
 			<0x60   KEY_RIGHT>,
@@ -1047,11 +1100,11 @@
 			<0x7c   KEY_VOLUMEDOWN>,
 			<0x79   KEY_VOLUMEUP>,
 			<0x57   KEY_AUDIO>,
-			<0x5d   KEY_SUBTITLE>,
-			<0x99   KEY_PHONE>,
+			<0x5d   KEY_SUBTITLE>,  
+			<0x99   KEY_PHONE>, 
 			<0xfd   KEY_WWW>,
 			<0xfc   KEY_F1>,
-			<0x7e   KEY_TV>;		
+			<0x7e   KEY_TV>;			
 	};
 
 	ir_key3 {
@@ -1092,19 +1145,86 @@
 	status = "okay";
 };
 
+&rga3_core0 {
+	status = "okay";
+};
+
+&rga3_0_mmu {
+	status = "okay";
+};
+
+&rga3_core1 {
+	status = "okay";
+};
+
+&rga3_1_mmu {
+	status = "okay";
+};
+
+&rga2 {
+	status = "okay";
+};
+
+&rkvdec_ccu {
+	status = "okay";
+};
+
+&rkvdec0 {
+	status = "okay";
+};
+
+&rkvdec0_mmu {
+	status = "okay";
+};
+
+&rkvdec1 {
+	status = "okay";
+};
+
+&rkvdec1_mmu {
+	status = "okay";
+};
+
+&rkvenc_ccu {
+	status = "okay";
+};
+
+&rkvenc0 {
+	status = "okay";
+};
+
+&rkvenc0_mmu {
+	status = "okay";
+};
+
+&rkvenc1 {
+	status = "okay";
+};
+
+&rkvenc1_mmu {
+	status = "okay";
+};
+
 &gmac1 {
+	/* Use rgmii-rxid mode to disable rx delay inside Soc */
 	phy-mode = "rgmii-rxid";
 	clock_in_out = "output";
+
 	snps,reset-gpio = <&gpio3 RK_PB2 GPIO_ACTIVE_LOW>;
 	snps,reset-active-low;
+	/* Reset time is 20ms, 100ms for rtl8211f */
 	snps,reset-delays-us = <0 20000 100000>;
+
 	pinctrl-names = "default";
 	pinctrl-0 = <&gmac1_miim
 			 &gmac1_tx_bus2
 			 &gmac1_rx_bus2
 			 &gmac1_rgmii_clk
 			 &gmac1_rgmii_bus>;
+
 	tx_delay = <0x44>;
+	/* rx_delay = <0x4f>; */
+
 	phy-handle = <&rgmii_phy1>;
 	status = "okay";
 };
