@@ -7,7 +7,7 @@
 # Blog: https://mlapp.cn
 #=================================================
 
-# mt7921 mt7921
+# mt7921 mt7916
 rm -rf package/kernel/mac80211
 rm -rf package/kernel/rtl8821cu
 rm -rf package/network/services/hostapd
